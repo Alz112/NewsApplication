@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/cardview_dark_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="small text"
+        android:layout_alignParentRight="true"
+        android:id="@+id/date"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/horse_16x9_1"
+            android:layout_below="@+id/date"
+            android:id="@+id/thumb"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:lines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Large Text"
+            android:id="@+id/title_text"
+            android:layout_alignBottom="@+id/thumb"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFF"
+            android:background="#80000000"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"/>
+
+        <TextView
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/thumb"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
